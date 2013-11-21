@@ -68,6 +68,20 @@ header h1 {
   padding: 5px;
   white-space: nowrap;
 }
+.statement {
+  width: 50%;
+  padding-left: 35px;
+  line-height: 4em;
+}
+.statement p span {
+  padding: 10px 20px;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+}
+
+
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
@@ -86,7 +100,7 @@ header h1 {
     margin: 0;
     line-height: 30px;
   }
-  .things ul {
+  .things ul, .statement {
     padding-left: 23px;
   }
 }
