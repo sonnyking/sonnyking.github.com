@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "proxima-nova";
+}
+html {
+  background: url(../images/sonnyking.jpg) no-repeat;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "proxima-nova";
+}
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 70px;
+}
+h3 {
+  font-size: 50px;
+}
+h4 {
+  font-size: 40px;
+}
+h5 {
+  font-size: 30px;
+}
+h6 {
+  font-size: 14px;
+}
+header {
+  padding: 30px;
+  color: white;
+}
+header span {
+  margin-left: 3px;
+  font-size: 20px;
+  color: #c1c1c1;
+}
+header h1 {
+  margin: 0;
+  line-height: 50px;
+  text-shadow: 0 1px 13px rgba(0, 0, 0, 0.6);
+}
+.things {
+  width: 40%;
+  line-height: 40px;
+}
+.things ul {
+  padding-left: 35px;
+}
+.things ul li {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline;
+  padding: 5px;
+  white-space: nowrap;
+}
+/* Large desktop */
+/* Portrait tablet to landscape and desktop */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 74px;
+  }
+  header {
+    padding: 20px;
+  }
+  header span {
+    margin-left: 3px;
+    font-size: 18px;
+  }
+  header h1 {
+    margin: 0;
+    line-height: 30px;
+  }
+  .things ul {
+    padding-left: 23px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  html {
+    background: url(../img/sonnyking.jpg) no-repeat;
+    background-color: white;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  header {
+    padding: 20px;
+  }
+  header span {
+    color: #e4e4e4;
+    margin-left: 3px;
+    font-size: 18px;
+  }
+  header h1 {
+    margin: 0;
+    line-height: 30px;
+  }
+}
