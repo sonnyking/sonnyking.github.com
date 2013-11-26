@@ -8,7 +8,7 @@ body {
 }
 html {
   background: url(../images/sonnyking.jpg) no-repeat;
-  background-color: white;
+  background-color: gray;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
