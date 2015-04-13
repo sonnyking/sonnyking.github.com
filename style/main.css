@@ -3,46 +3,79 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /**
 .class {
-  size
-  padding
-  margin
-  background
-  border
-  font
+    display
+    position
+    size
+    padding
+    margin
+    position
+    background
+    border
+    font
+    line-height
 }
 
 */
 
+/** Page Structure */
+
 html {
-  height: 100%;
-  font-size: 62.5%;
+    height: 100%;
+    font-size: 62.5%;
 }
 
 body {
-  min-height: 100%;
-  background-color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  color: white;
+    min-height: 100%;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: white;
 }
 
-/* acts as horizontal band */
-header {
-  padding: 2rem 1rem;
+header, section {
+    position: relative;
+    padding: 2rem 1rem;
+    min-height: 40rem;
+    text-align: center;
 }
-
-section {
-  padding: 2rem 1rem;
+.dialog {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    text-align: left;
 }
 
 footer {
-  padding: 2rem 1rem;
+    padding: 2rem 1rem;
 }
 
-button{
-  padding: .5rem 2rem;
-  border: 2px solid white;
-  border-radius: 5px;
-  background-color: transparent;
-  color: white;
+/** Page Elements */
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+p {
+    margin: 2rem 0;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+button {
+    padding: .5rem 2rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 200;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
 }
