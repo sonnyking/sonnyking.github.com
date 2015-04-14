@@ -40,9 +40,8 @@ header, section {
 }
 .dialog {
     display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    height: 100%;
     width: 80%;
     text-align: left;
 }
