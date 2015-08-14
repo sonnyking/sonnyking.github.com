@@ -42,7 +42,8 @@ gulp.task('templates', function() {
 
   gulp.src('src/jade/*.jade')
     .pipe(jade({
-      locals: YOUR_LOCALS
+      locals: YOUR_LOCALS,
+      pretty: true
     }))
     .pipe(gulp.dest('dist/'))
 });
