@@ -7,6 +7,8 @@
     "gulp": "^3.9.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-jade": "^1.1.0",
     "gulp-jshint": "^1.11.2",

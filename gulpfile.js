@@ -8,6 +8,7 @@ var rename = require('gulp-rename');
 var ts = require('gulp-typescript');
 var merge = require('merge2');
 var jade = require('gulp-jade');
+var browserSync = require('browser-sync').create();
 
 // Lint Task
 gulp.task('lint', function() {
@@ -46,6 +47,14 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('dist/'))
 });
 
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    });
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('src/js/*.js', ['lint', 'scripts']);
@@ -54,4 +63,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'watch', 'browser-sync']);
