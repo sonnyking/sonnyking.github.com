@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var ts = require('gulp-typescript');
 var merge = require('merge2');
+var jade = require('gulp-jade');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -35,11 +36,22 @@ gulp.task('scripts', function() {
     ]);
 });
 
+gulp.task('templates', function() {
+  var YOUR_LOCALS = {};
+
+  gulp.src('src/jade/*.jade')
+    .pipe(jade({
+      locals: YOUR_LOCALS
+    }))
+    .pipe(gulp.dest('dist/'))
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('src/js/*.js', ['lint', 'scripts']);
     gulp.watch('src/scss/*.scss', ['sass']);
+    gulp.watch('src/jade/*.jade', ['templates']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'watch']);
