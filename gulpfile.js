@@ -48,20 +48,18 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('dist/'))
 });
 
-gulp.task('browser-sync', function() {
+// Watch Files For Changes
+gulp.task('watch', function() {
     browserSync.init({
         server: {
             baseDir: "./dist"
         }
     });
-});
-
-// Watch Files For Changes
-gulp.task('watch', function() {
     gulp.watch('src/js/*.js', ['lint', 'scripts']);
     gulp.watch('src/scss/*.scss', ['sass']);
     gulp.watch('src/jade/*.jade', ['templates']);
+    gulp.watch("dist/*.html").on('change', browserSync.reload);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'watch', 'browser-sync']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'watch']);

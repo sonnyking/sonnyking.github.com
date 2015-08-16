@@ -1,0 +1,21 @@
+{
+  "name": "Sonny King",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sonnyking/sonnyking.github.com",
+  "authors": [
+    "Sonny King <sonny@sonnyking.com>"
+  ],
+  "description": "My little website",
+  "main": "dist/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "polymer": "~1.1.0"
+  }
+}
