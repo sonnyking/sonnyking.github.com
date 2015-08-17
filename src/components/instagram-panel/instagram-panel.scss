@@ -1,0 +1,11 @@
+$primary-color: #333;
+$secondary-color: #666;
+
+:host {
+    background-color: $secondary-color;
+    .content-wrapper {
+        ::content {
+            color: $primary-color;
+        }
+    }
+}

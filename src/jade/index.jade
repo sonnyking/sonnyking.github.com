@@ -1,22 +1,27 @@
 doctype html
 html(lang="en")
-  head
-    title Sonny King Innovation Technologist
-    link(rel='stylesheet', href='/css/style.css')
-  body
-    header
-      h1 Innovation Technologist
-    section#introduction
-      p I'm a design technologist at frog design, a product innovation and strategy firm based in San Francisco.
-    section#technology
-      p Technology is a part of our daily lives, I chose to embrace it during a time of massive change.
-    section#design
-      p At the heart of what I do is the burning desire to bring design to market, from concept to product.
-    section#innovation
-      p It' very hard to
-    section#process
-    footer
-      ul
-        li gihub
-        li twitter
-        li instagram
+    head
+        title Sonny King Innovation Technologist
+        link(rel='stylesheet', href='/css/style.css')
+        script(src='bower_components/webcomponentsjs/webcomponents.min.js')
+        link(rel='import', href='bower_components/polymer/polymer.html')
+        link(rel='import', href='components/instagram-panel/instagram-panel.html')
+    body
+        header
+            h1 Innovation Technologist
+        section#introduction
+            p I'm a design technologist at frog design, a product innovation and strategy firm based in San Francisco.
+        section#technology
+            p Technology is a part of our daily lives, I chose to embrace it during a time of massive change.
+        section#design
+            p At the heart of what I do is the burning desire to bring design to market, from concept to product.
+        section#innovation
+            p It' very hard to
+        section#process
+        section#photography
+            instagram-panel
+        footer
+            ul
+                li gihub
+                li twitter
+                li instagram

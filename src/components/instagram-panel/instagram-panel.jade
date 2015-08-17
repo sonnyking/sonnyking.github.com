@@ -1,0 +1,13 @@
+dom-module#instagram-panel
+  link(rel="import", type="css", href="instagram-panel.css")
+  template
+    div(class='instagram')
+    content
+        p This is my instagram component
+  script(type='text/javascript').
+    Polymer({
+      is: 'instagram-panel',
+      properties: {
+        random: Boolean
+      }
+    });
