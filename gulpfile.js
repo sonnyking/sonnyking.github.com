@@ -49,6 +49,7 @@ gulp.task('templates', function() {
 });
 
 // compiles our web components, may move to seperate repos
+// install them as if they we're bowered already
 gulp.task('components', function() {
     var YOUR_LOCALS = {};
     gulp.src('src/components/**/*.jade')
@@ -56,10 +57,10 @@ gulp.task('components', function() {
         locals: YOUR_LOCALS,
         pretty: true
       }))
-      .pipe(gulp.dest('dist/components/'));
+      .pipe(gulp.dest('dist/bower_components/'));
     gulp.src('src/components/**/*.scss')
       .pipe(sass())
-      .pipe(gulp.dest('dist/components/'));
+      .pipe(gulp.dest('dist/bower_components/'));
 });
 
 // Watch Files For Changes
