@@ -1,6 +1,11 @@
+link(rel="import", href="../iron-ajax/iron-ajax.html")
 dom-module#instagram-panel
   link(rel="import", type="css", href="instagram-panel.css")
   template
+    iron-ajax(auto="true",
+        url="https://api.instagram.com/v1/users/1826169172/media/recent/?client_id=4dc84f34e54442eaa8d4ed0247d481cf",
+        handleAs="jsonp",
+        response="{{response}}")
     div(class='instagram')
     content
         p This is my instagram component
@@ -14,5 +19,8 @@ dom-module#instagram-panel
       is: 'instagram-panel',
       properties: {
         random: Boolean
+      },
+      responseChanged: function(oldValue) {
+          console.log(this.response);
       }
     });

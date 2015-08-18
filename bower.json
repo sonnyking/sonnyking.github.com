@@ -16,6 +16,8 @@
     "tests"
   ],
   "devDependencies": {
-    "polymer": "~1.1.0"
-  }
+    "polymer": "~1.1.0",
+    "iron-ajax": "polymerelements/iron-ajax#~1.0.4"
+  },
+  "dependencies": {}
 }
