@@ -2,10 +2,30 @@ $primary-color: #333;
 $secondary-color: #666;
 
 :host {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-wrap: wrap; /* Safari */
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start; /* Safari */
+    justify-content: flex-start;
+    -webkit-align-items: stretch; /* Safari */
+    align-items: stretch;
+
+    width: 100%;
+    height: auto;
     background-color: $secondary-color;
-    .content-wrapper {
-        ::content {
-            color: $primary-color;
+    ::content {
+        color: $primary-color;
+        .photoThumbnail {
+            display: block;
+            box-sizing: border-box;
+            height: 120px;
+            width: 120px;
+            margin: 10px;
+            background-color: black;
+            img {
+                max-width: 100%;
+            }
         }
     }
 }

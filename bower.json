@@ -19,5 +19,9 @@
     "polymer": "~1.1.0",
     "iron-ajax": "polymerelements/iron-ajax#~1.0.4"
   },
-  "dependencies": {}
+  "dependencies": {
+     "polymer": "~1.1.0",
+     "iron-ajax": "polymerelements/iron-ajax#~1.0.4"
+     "byutv-jsonp": "~1.2.0"
+  }
 }
