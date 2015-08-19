@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
+var del = require('del');
+var bower = require('gulp-bower');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
@@ -9,6 +11,16 @@ var ts = require('gulp-typescript');
 var merge = require('merge2');
 var jade = require('gulp-jade');
 var browserSync = require('browser-sync').create();
+
+// clean the distro
+gulp.task('clean-dist', function (cb) {
+  del(['dist'], cb);
+});
+
+// bower install
+gulp.task('bower', function() {
+  return bower()
+});
 
 // Lint Task
 gulp.task('lint', function() {
@@ -79,3 +91,6 @@ gulp.task('watch', function() {
 
 // Default Task
 gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'components', 'watch']);
+gulp.task('clean', ['clean-dist'], function() {
+    bower();
+});
