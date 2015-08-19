@@ -17,11 +17,12 @@
   ],
   "devDependencies": {
     "polymer": "~1.1.0",
-    "iron-ajax": "polymerelements/iron-ajax#~1.0.4"
+    "iron-ajax": "polymerelements/iron-ajax#~1.0.4",
+    "web-component-tester": "~3.3.10"
   },
   "dependencies": {
-     "polymer": "~1.1.0",
-     "iron-ajax": "polymerelements/iron-ajax#~1.0.4",
-     "byutv-jsonp": "~1.2.0"
+    "polymer": "~1.1.0",
+    "iron-ajax": "polymerelements/iron-ajax#~1.0.4",
+    "byutv-jsonp": "~1.2.0"
   }
 }
