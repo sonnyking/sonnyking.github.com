@@ -3,8 +3,8 @@ dom-module#instagram-panel
   link(rel="import", type="css", href="instagram-panel.css")
   template
     byutv-jsonp(auto="true",
-        url="{{ _getURL(userID) }}",
-        params='{"client_id":"{{ clientId }}"}',
+        url$='{{ _getURL(userId) }}',
+        params$='{{ _getParams(clientId) }}',
         on-response="handleResponse")
     div(class='instagram')
     content
@@ -30,15 +30,20 @@ dom-module#instagram-panel
         dog: String
       },
       _getURL: function (userId) {
-        return 'https://api.instagram.com/v1/users/' + userID + '/media/recent/';
+        //- console.log("getURL");
+        return 'https://api.instagram.com/v1/users/' + userId + '/media/recent/';
+      },
+      _getParams: function (clientId) {
+        //- console.log("getParams");
+        return '{"client_id":"' + clientId + '"}';
       },
       handleResponse: function(response) {
           var _self = this;
           
           response.detail.data.forEach( function(photo) {
               
-              console.log( 'Photo: ' + photo.id );
-              console.log( ' - thumbnail ' + photo.images.thumbnail.url );
+              //- console.log( 'Photo: ' + photo.id );
+              //- console.log( ' - thumbnail ' + photo.images.thumbnail.url );
               
               var newThumbnail = document.createElement('div');
               newThumbnail.classList.add('photoThumbnail');
