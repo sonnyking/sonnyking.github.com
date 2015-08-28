@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes")
+    script(src="../bower_components/webcomponentsjs/webcomponents-lite.js")
+    script(src="../bower_components/web-component-tester/browser.js")
+    link(rel="import" href="../bower_components/instagram-panel/instagram-panel.html")
+  body
+    instagram-panel(client-id="4dc84f34e54442eaa8d4ed0247d481cf", user-id="1826169172")
+    script(type='text/javascript').
+        var myPanel = document.querySelector('instagram-panel');
+
+        suite('<instagram-panel>', function() {
+
+            test('defines the "clientId" property', function() {
+                assert.equal(myPanel.clientId, '4dc84f34e54442eaa8d4ed0247d481cf');
+            });
+
+            test('defines the "userId" property', function() {
+                assert.equal(myPanel.userId, '1826169172');
+            });
+
+        });
