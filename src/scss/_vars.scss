@@ -60,7 +60,10 @@ $use-greybox:       false;
  */
 
 
-
+$z-level-0: 1020;
+$z-level-1: 1000;
+$z-level-2: 800;
+$z-level-3: 20;
 
 
 /*------------------------------------*\
@@ -72,3 +75,4 @@ $use-greybox:       false;
 
 
  $header-background: rgba(0,0,0,.3);
+ $light-text: white;
