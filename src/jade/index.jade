@@ -1,53 +1,57 @@
 doctype html
 html(lang="en", ng-app)
-    head
-        title Sonny King Innovation Technologist
-        link(rel='stylesheet', href='/css/style.css')
-        script(src='bower_components/webcomponentsjs/webcomponents.min.js')
-        link(rel='import', href='bower_components/polymer/polymer.html')
-        link(rel='import', href='bower_components/instagram-panel/instagram-panel.html')
-        link(rel='import', href='bower_components/iron-flex-layout/classes/iron-flex-layout.html')
+  head
+    title Sonny King Innovation Technologist
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='bower_components/webcomponentsjs/webcomponents.min.js')
+    link(rel='import', href='bower_components/polymer/polymer.html')
+    link(rel='import', href='bower_components/instagram-panel/instagram-panel.html')
+    link(rel='import', href='bower_components/iron-flex-layout/classes/iron-flex-layout.html')
     body
-        header(class="layout horizontal center")
-            div(class="logo")
-              h1 Innovation Technologist
-            div(class="flex")
-            nav(class="navigation")
-              div
-                ol(class="nav breadcrumb")
-                  li
-                    a(href="#", class="link-complex") design
-                  li
-                    a(href="#", class="link-complex") technology
-                  li
-                    a(href="#", class="link-complex") strategy
-        div(class="header-background")
-        section#innovation
-            p(class="tagline") I'm a design technologist at frog design, a product innovation and strategy firm based in San Francisco.
-        section#design(class="right")
+      header(class="layout horizontal center")
+        div(class="logo")
+          h1 Innovation Technologist
+        div(class="flex")
+        nav(class="navigation")
+          div
+            ol(class="nav breadcrumb")
+              li
+                a(href="#", class="link-complex") design
+              li
+                a(href="#", class="link-complex") technology
+              li
+                a(href="#", class="link-complex") strategy
+      div(class="header-background")
+      section#innovation
+        div(class="grid grid--center")
+          p(class="tagline") I'm a design technologist at frog design, a product innovation and strategy firm based in San Francisco.
+          div(class="grid--item hero")
             h2 Innovation Design, Product Development
             h3 Translating user need to create opportunity
-            p We no longer design in a vaccum, we explore the market to understand the need, drive 
-        section#technology(class="inverse")
-            h2 It's time that technology
-            h3 isn't the center of the experince
-            p At the heart of what I do is the burning desire to bring design to market, from concept to product.
-        section#strategy
-            h2 Innovation Design, Product Development
-            h3 Translating user need to create opportunity
-            p We no longer design in a vaccum, we explore the market to understand the need, drive 
-        section#process
-            h2 Innovation Design, Product Development
-            h3 Translating user need to create opportunity
-            p We no longer design in a vaccum, we explore the market to understand the need, drive 
-        section#photography
-            instagram-panel(client-id="4dc84f34e54442eaa8d4ed0247d481cf", user-id="1826169172")
-        footer
-            ul
-                li
-                    a(href="https://github.com/sonnyking") github
-                li
-                    a(href="https://twitter.com/techaesthetic") twitter
-                li 
-                    a(href="https://instagram.com/techaesthetic/") instagram
-        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js")
+      section#design(class="right")
+        h2 Innovation Design, Product Development
+        h3 Translating user need to create opportunity
+        p We no longer design in a vaccum, we explore the market to understand the need, drive 
+      section#technology(class="inverse")
+        h2 It's time that technology
+        h3 isn't the center of the experince
+        p At the heart of what I do is the burning desire to bring design to market, from concept to product.
+      section#strategy
+        h2 Innovation Design, Product Development
+        h3 Translating user need to create opportunity
+        p We no longer design in a vaccum, we explore the market to understand the need, drive 
+      section#process
+        h2 Innovation Design, Product Development
+        h3 Translating user need to create opportunity
+        p We no longer design in a vaccum, we explore the market to understand the need, drive 
+      section#photography
+        instagram-panel(client-id="4dc84f34e54442eaa8d4ed0247d481cf", user-id="1826169172")
+      footer
+        ul
+          li
+            a(href="https://github.com/sonnyking") github
+          li
+            a(href="https://twitter.com/techaesthetic") twitter
+          li 
+            a(href="https://instagram.com/techaesthetic/") instagram
+      script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js")

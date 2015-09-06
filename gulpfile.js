@@ -5,6 +5,7 @@ var del = require('del');
 var bower = require('gulp-bower');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var ts = require('gulp-typescript');
@@ -34,6 +35,10 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('src/scss/*.scss')
         .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('dist/css'));
 });
 

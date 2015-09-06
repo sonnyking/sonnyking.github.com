@@ -80,6 +80,7 @@ section {
     }
   }
   &#innovation {
+    position: relative;
     height: 600px;
     background-image: url('../images/intelpos.jpg');
     background-size: cover;
@@ -87,6 +88,11 @@ section {
       position: relative;
       color: $light-text;
       z-index: $z-level-0 - 1;
+    }
+    .hero {
+      text-align: center;
+      position: absolute;
+      bottom: 3rem;
     }
   }
   &#technology {
