@@ -4,7 +4,8 @@
   "description": "My little one pager website hosted on github",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "inuit-layout": "^0.2.2"
   },
   "devDependencies": {
     "bower": "^1.4.1",

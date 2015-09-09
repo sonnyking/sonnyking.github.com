@@ -23,9 +23,9 @@
  * and introducing objects and abstractions is as simple as switching the
  * following variables to `true`.
  */
-$use-grids:         false;
-$use-flexbox:       false;
-$use-columns:       false;
+$use-grids:         true;
+$use-flexbox:       true;
+$use-columns:       true;
 $use-nav:           false;
 $use-options:       false;
 $use-pagination:    false;
@@ -33,7 +33,7 @@ $use-breadcrumb:    false;
 $use-media:         false;
 $use-marginalia:    false;
 $use-island:        false;
-$use-block-list:    false;
+$use-block-list:    true;
 $use-matrix:        false;
 $use-split:         false;
 $use-this-or-this:  false;

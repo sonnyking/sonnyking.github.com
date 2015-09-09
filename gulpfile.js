@@ -114,7 +114,7 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'compile-app-tests', 'components', 'assets', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'compile-app-tests', 'components', 'watch']);
 gulp.task('clean', ['clean-dist'], function() {
     bower();
 });

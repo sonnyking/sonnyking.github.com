@@ -7,6 +7,10 @@ html(lang="en", ng-app)
     link(rel='import', href='bower_components/polymer/polymer.html')
     link(rel='import', href='bower_components/instagram-panel/instagram-panel.html')
     link(rel='import', href='bower_components/iron-flex-layout/classes/iron-flex-layout.html')
+    script(src='https://use.typekit.net/waj2pzi.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+    
     body
       header(class="layout horizontal center")
         div(class="logo")
@@ -25,17 +29,24 @@ html(lang="en", ng-app)
       section#innovation
         div(class="grid grid--center")
           p(class="tagline") I'm a design technologist at frog design, a product innovation and strategy firm based in San Francisco.
-          div(class="grid--item hero")
-            h2 Innovation Design, Product Development
-            h3 Translating user need to create opportunity
-      section#design(class="right")
-        h2 Innovation Design, Product Development
-        h3 Translating user need to create opportunity
-        p We no longer design in a vaccum, we explore the market to understand the need, drive 
-      section#technology(class="inverse")
-        h2 It's time that technology
-        h3 isn't the center of the experince
-        p At the heart of what I do is the burning desire to bring design to market, from concept to product.
+          div(class="grid__item one-third hero")
+            h2 Design technology
+            h3 Innovation deisgn, furthering the human experience.
+            p A bunch of little words that supppor the bigger words.
+      section#design(class="right grid")
+        div(class="grid__item one-half")        
+          h2 Innovation Design, Product Development
+          h3 Translating user need to create market opportunity
+          p
+            There are two primary means of furthering the human experience;
+            infuelncing trends and succesfully delivering experience to market.
+            I get the gratest pleasure from seeing producting in the hands, pockets
+            and machines of humans. 
+      section#technology(class="inverse left grid")
+        div(class="grid__item one-half") 
+          h2 It's time that technology
+          h3 isn't the center of the experince
+          p At the heart of what I do is the burning desire to bring design to market, from concept to product.
       section#strategy
         h2 Innovation Design, Product Development
         h3 Translating user need to create opportunity

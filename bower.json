@@ -24,6 +24,7 @@
     "polymer": "~1.1.0",
     "iron-ajax": "polymerelements/iron-ajax#~1.0.4",
     "byutv-jsonp": "~1.2.0",
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#~1.0.3"
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#~1.0.3",
+    "inuit-layout": "~0.3.2"
   }
 }
