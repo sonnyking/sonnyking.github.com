@@ -6,25 +6,28 @@ html(lang="en", ng-app)
     script(src='bower_components/webcomponentsjs/webcomponents.min.js')
     link(rel='import', href='bower_components/polymer/polymer.html')
     link(rel='import', href='bower_components/instagram-panel/instagram-panel.html')
+    link(rel='import', href='bower_components/responsive-header/responsive-header.html')
     link(rel='import', href='bower_components/iron-flex-layout/classes/iron-flex-layout.html')
     script(src='https://use.typekit.net/waj2pzi.js')
     script.
       try{Typekit.load({ async: true });}catch(e){}
     
     body
-      header(class="layout horizontal center")
-        div(class="logo")
-          h1 Innovation Technologist
-        div(class="flex")
-        nav(class="navigation")
-          div
-            ol(class="nav breadcrumb")
-              li
-                a(href="#", class="link-complex") design
-              li
-                a(href="#", class="link-complex") technology
-              li
-                a(href="#", class="link-complex") strategy
+      responsive-header(title="Innovation Technologist")
+        ul(class="nav")
+          li
+            a(href="#", class="link-complex") innovation
+          li
+            a(href="#", class="link-complex") design
+          li
+            a(href="#", class="link-complex") technology
+          li
+            a(href="#", class="link-complex") agent of change
+          li
+            a(href="#", class="link-complex") process
+          li
+            a(href="#", class="link-complex") working with me
+
       div(class="header-background")
       section#innovation
         div(class="grid grid--center")
@@ -37,7 +40,7 @@ html(lang="en", ng-app)
         div(class="grid__item one-half")        
           h2 Innovation Design, Product Development
           h3 Translating user need to create market opportunity
-          p
+          p.
             There are two primary means of furthering the human experience;
             infuelncing trends and succesfully delivering experience to market.
             I get the gratest pleasure from seeing producting in the hands, pockets

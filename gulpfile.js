@@ -109,12 +109,13 @@ gulp.task('watch', function() {
     gulp.watch('src/scss/*.scss', ['sass']);
     gulp.watch('src/jade/*.jade', ['templates']);
     gulp.watch('test/**/*.jade', ['compile-app-tests']);
-    gulp.watch(['src/components/**/*.jade','src/components/**/*.scss'], ['components']);
+    gulp.watch('src/components/**/*.jade', ['components']);
+    gulp.watch('src/components/**/*.scss', ['components']);
     gulp.watch(['dist/**/*.html', 'dist/**/*.css']).on('change', browserSync.reload);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'compile-app-tests', 'components', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'templates', 'compile-app-tests', 'components', 'assets', 'watch']);
 gulp.task('clean', ['clean-dist'], function() {
     bower();
 });

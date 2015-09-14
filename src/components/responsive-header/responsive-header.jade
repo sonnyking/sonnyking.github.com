@@ -1,0 +1,28 @@
+dom-module#responsive-header
+  link(rel="import", type="css", href="responsive-header.css")
+  template
+    header(class="layout horizontal center")
+      div(class="logo")
+        h1 {{ title }}
+      div(class="flex")
+      nav(class="navigation")
+        content
+        <!-- nav list -->
+  script(type='text/javascript').
+    Polymer({
+      is: 'responsive-header',
+      properties: {
+        title: {
+          type: String,
+          reflectToAttribute: true
+        },
+        scroll: {
+          type: Boolean,
+          value: true,
+          reflectToAttribute: true
+        }
+      },
+      handleScroll: function(event) {
+          console.log('scroll just occured');
+      }
+    }); 

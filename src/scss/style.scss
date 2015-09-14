@@ -39,6 +39,11 @@ header {
     }
   }
   .navigation {
+    ul.nav {
+      li {
+        margin-left: 1rem;
+      }
+    }
     a:link, a:visited, a:hover, a:active  {
       color: $light-text;
       text-decoration: none;
